@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <h1>Get In Touch</h1>
+    <p> Fill out the form below!.</p>
+
+    <div class="form-container">
+        <form >
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="name" class="required-field">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="required-field">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <lp>Select your Gender:</lp>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" vAalue="Other">
+                    <label for="other">Other</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone (optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div class="form-group">
+                    <label for="country">Select your Country: </label>
+                    <select id="country" name="country">
+                        <option value="usa">USA</option>
+                        <option value="india">India</option>
+                        <option value="nepal">Nepal</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class= "form-group">
+                    <form>
+                    <h3>Check your interest below: </h3>   
+                    <input type="checkbox" id="Opt1" name="Opt1" value="hiking">
+                    <label for="Opt1"> I love hiking!</label><br>
+                    <input type="checkbox" id="Opt2" name="Opt2" value="reading">
+                    <label for="Opt2"> I love reading!</label><br>
+                    <input type="checkbox" id="Opt3" name="Opt3" value="cooking">
+                    <label for="Opt3"> I love cooking!</label><br><br>
+                    </form>
+                </div>    
+                <div class="form-group">
+                    <label for="subject" class="required-field">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Brief subject of your message" required>
+                </div>
+    
+                <br>
+
+                <div class="form-group">
+                    <label for="message" class="required-field">Message: </label>
+                    <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
