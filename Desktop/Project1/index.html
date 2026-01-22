@@ -19,29 +19,102 @@
         </nav>
         <div id = "parent">
             <div id = "about-div"> 
-                <img src="images.jpg" alt="Description" class="loaded-image">
+                <img src="images.jpg" alt="Description" class="loaded-image"> 
                 <div id="text"> 
-                    <h1>  Hi, I'm </h1>
+                    <h2>  Hi, I'm </h2>
                     <h1>  Sarbesh Sapkota </h1>
+                    <p id="first-p"> 
+                        Software Engineer with a background in building web applications and backend services using Python,
+                        JavaScript, and SQL. 
+                        I earned my Bachelor’s degree in Computer Science with a minor in Mathematics from
+                        Indiana State University, where I developed a strong foundation in problem-solving, systems programming,
+                        and software design.
+                     </p>   
                     <span> Software Engineer </span>
+                    <button id="cv-button"> <a href="imagess.jpg" download="filename-for-user">
+                         Download CV </a> </button>
                 </div>
             </div>
-            <div id = "objective">    
-                <section>
-                    <p id="objective">
-                    Computer Science graduate with looking to join <strong>[Company's Name] </strong> <em>Software Engineering</em> position.
-                    Eager to contribute to <strong>[Company's Name]'s</strong> Engineering team by designing and implementing innovative solutions 
-                    that enhance user experience and enable data-driven decisions.     
-                    Seeking to apply <em>my technical skills</em>, <em>problem-solving abilities</em>, and <em>collaborative spirit</em> in a dynamic environment
-                    where I can <mark>directly impact product development and user satisfaction</mark>.
-                    </p>
-                </section>
-            </div>
-        </div>
-    </body>
+            <section id="experience">
+                <h2 id="section-title">Experience</h2>
+                <div id="experience-info">
+                    
+                    <div id="grid">
+                        <div id="experience-cards">
+                            <span> Software Enginner </span>
+                            <h3> 1.5 years </h3>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Quis dolorem nobis modi, sequi et totam labore rerum? 
+                            </p>                         
+                        </div>
+                        <div id="experience-cards">
+                            <span> Frontend Development Intern</span>
+                            <h3> 0.5 years </h3>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Quis dolorem nobis modi, sequi et totam labore rerum? 
+                            </p>                         
+                        </div>
+                        <div id="experience-cards">
+                            <span> Backend Developer</span>
+                            <h3> 1 years </h3>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Quis dolorem nobis modi, sequi et totam labore rerum? 
+                            </p>                         
+                        </div>
+                    </div>
+                    <img src="images.jpg" alt="" class="loaded-grid">
+                </div>
+            </section>
+            <section id="project">
+                <h2 id="section-title">Recent Projects</h2> 
+                <div id="p-grid">
+                    <div id="project-cards">
+                        <img src="project1.png" alt="Description" class="projectimg"> 
+                        <h2> Project 1: Image-Processing Bot</h2>
+                        <p> The bot uses Python and OpenCV to implement some algorithms,
+                            such as texture analysis and morphological operations.
+                            It supports mouse-based selection for cropping and applies processing 
+                            alogorithms to ensure efficient performance. 
+                        </p>
+                        <button id="project_button">Github Repo</button>                         
+                    </div>
+                    <div id="project-cards">
+                        <img src="project2.png" alt="Description" class="projectimg"> 
+                        <h2> Project 2: Stock-Tracker </h2>
+                        <p> Web application that allows users to search for stocks and view basic price information in a simple dashboard.
+                            The app searches for stock data from a public API and shows the results in a custom interface.
+                        </p>
+                        <button id="project_button">Github Repo</button>                         
+                    </div>
+                    <div id="project-cards">
+                        <img src="project3.png" alt="Description" class="projectimg"> 
+                        <h2> Project 3: Filtering Extension</h2>
+                        <p> The Filtering Extension is a lightweight browser extension that helps users filter and organize content on web pages.
+                        </p>
+                        <button id="project_button">Github Repo</button>                         
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div id="input-box">
+                    <h2 class="section-title">Contact Me</h2>
 
-    <footer>
-        <p> © 2025 Created by Sarbesh </p>
-    </footer>
+                    <div id="input">
+                        <input type="text" placeholder="@email.com">
+                    </div>
+                    <div id="submit-btn">Submit</div>
+                </div>
+
+            </section>
+        </div>
+        <footer>
+            <ul>
+                <li> <a href="#about-div"> About</a> </li>
+                <li> <a href="#experience">Experience</a> </li>
+                <li> <a href="#projects"> Projects </a> </li>
+                <li> <a href="#contact"> Contacts </a> </li>
+            </ul>
+            <p id="copytright">All Right Reserved</p>
+        </footer>
 
 </html>
