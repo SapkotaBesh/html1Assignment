@@ -1,0 +1,221 @@
+   /* Global Body Styling */
+   body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f6f8;
+    }
+    /* header and navigation */
+    header {
+        background: #2c3e50;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* nav lings */
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 40px auto;
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    #registerSection {
+        max-width: 750px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+    /* Form */
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px 30px;
+    }
+
+    form label {
+        font-weight: bold;
+    }
+
+    form input, form select {
+        padding: 8px;
+        width: 100%;
+    }
+    /* Last three buttons */
+    .full {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .full-2 {
+        margin-left: 10%;
+    }
+    
+    button {
+        padding: 10px;
+        background: #2c3e50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    button:hover {
+        background: #1a252f;
+    }
+
+    #employeeSection {
+        max-width: 800px;
+        background: white;
+
+        margin: 40px auto;
+        padding: 25px;
+        
+        border-radius: 8px;
+        /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+       
+    }
+    #etable {
+        table-layout: auto;
+        width:100%;
+        margin-top: 20px;
+        background: white;
+        
+        border-radius: 6px;
+        border: 2px solid black;
+        
+        text-align: center;
+        border-collapse: collapse;
+
+
+        th{
+            font-weight: bold;
+            padding: 12px 15px;
+            border: 1px solid black;
+        }
+        td {
+            padding: 10px 15px;
+            border: 1px solid black;
+        }
+        tr:hover {
+            border: 2px solid black;
+            background-color: rgb(241, 229, 229);
+        }
+        td:hover {
+            border: 2px solid black;
+            background-color: rgb(248, 119, 119);
+        }
+    }
+    
+
+
+
+/* Makes the container div little smaller */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 85%;
+    }
+    #employeeSection {
+        max-width: 85%;
+    }
+    nav a {
+        margin-left: 12px;
+    }
+    #etable {
+         max-width:85%;
+        margin-top: 10px;
+    }
+}
+
+/*  Makes the container div fit better relative to 
+    screen size. Turn the column into 1 row.
+*/
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+    #employeeSection {
+        max-width: 90%;
+        overflow-x: auto;   
+    }
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 15px;
+    }
+}
+
+
+/*  Makes the container div fit better relative to 
+    screen size. 
+    change display to inline-block it view better.
+    Turn the forms to column.
+*/
+
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+    #employeeSection {
+        margin: 20px;
+        padding: 15px;
+        overflow-x: auto;   
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .button-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .right-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #etable th:nth-child(4),
+    #etable td:nth-child(4)
+    {
+        display: none;
+    }
+}
+
+

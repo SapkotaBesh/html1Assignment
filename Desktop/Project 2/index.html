@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Employee System</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#" onclick="showTable('register')">Register</a>
+            <a href="#" onclick="showTable('employees')">Employees</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="registerSection">
+            <h2>Employee Registration Form</h2>
+
+            <form id="e-form">
+                <div>
+                    <label>Full Name</label>
+                    <input type="text" id="tname" placeholder="Enter name">
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" id="temail"  placeholder="Enter email">
+                </div>
+
+                <div>
+                    <label>Position</label>
+                    <input type="text" id="tposition"  placeholder="Enter position">
+                </div>
+
+                <div>
+                    <label  Department</label>
+                    <select id = "tdepartment">
+                        <option>IT</option>
+                        <option>HR</option>
+                        <option>Finance</option>
+                        <option>Marketing</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label >Salary</label>
+                    <input type="number" id="tsalary"  placeholder="Enter salary">
+                </div>
+
+                <div>
+                    <label>Start Date</label>
+                    <input type="date"  id="tstart">
+                </div>
+
+                <div class="full">
+                    <button type="submit">Register Employee</button>
+                    <div class="full-2">
+                        <button type="reset">Reset</button>
+                        <button type="button" onclick="clearForm()" >Clear</button>
+                    </div>
+                </div>
+            </form>
+        </div>  
+
+        <div id="employeeSection" style="display: none;">
+            <h2> Registered Employee</h2>
+            <label for="searchInput">Search Employee:</label>
+            <input type="text" id="searchInput" placeholder="Search by name...">
+            <table id="etable">
+                <thead id="etable-head">
+                    <tr>
+                        <th> Name </th>
+                        <th> Email </th>
+                        <th> Position </th>
+                        <th> Department </th>
+                        <th> Salary </th>
+                        <th> Start Date </th>
+                        <th class="taction"> Action </th>
+                    </tr>
+                </thead>
+                <tbody id = "etable-body"> 
+                    <tr>
+                        <td data-label="Full Name">John Doe</td>
+                        <td data-label="Email">john.doe@example.com</td>
+                        <td data-label="Position">Software Engineer</td>
+                        <td data-label="Department">IT</td>
+                        <td data-label="Salary">$5500</td>
+                        <td data-label="Start Date">2025-06-15</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Full Name">Jane Smith</td>
+                        <td data-label="Email">jane.smith@example.com</td>
+                        <td data-label="Position">HR Manager</td>
+                        <td data-label="Department">HR</td>
+                        <td data-label="Salary">$4800</td>
+                        <td data-label="Start Date">2024-09-01</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<script src="scripts.js"></script>
+</body>
+</html>
